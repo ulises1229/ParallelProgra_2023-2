@@ -1,17 +1,25 @@
-# Posgrado en Ciencia e Ingeniería de la Computación 
-## Introducción a la Programación Paralela con GPUs
-###  Semestre: 2021-1
-![alt text](figs/logo.png)
+___
 
+# Licenciatura en Tecnología
+## Programación Paralela
+### Semestre 2023-2
+
+<img src="figs/lictec_small.png" alt="drawing" width="300" style = "text-align: center"/>
+
+
+
+___
+
+
+
+![alt text](figs/logo.png)
 
 
 ## Profesor
  Dr. Ulises Olivares Pinto
 
 ## Objetivo del curso
-Presentar al estudiante el modelo de programación paralela empleando Unidades de
-Procesamiento Gráfico (GPUs). Se utilizarán los GPUs como dispositivo de propósito
-general para la resolución de problemas inherentemente paralelos.
+Presentar al estudiante el modelo de programación paralela para CPUs y GPUs para la resolución de problemas inherentemente paralelos.
 
 
 ## Prerequisitos
@@ -26,7 +34,8 @@ Se deberá contar con una computadora con GPU de la marca NVIDIA
 #### Software
 Se deberá contar con el siguiente software instalado 
 
-  + [CUDA Toolkit] (https://developer.nvidia.com/cuda-toolkit)
+  + OpenMP (https://www.openmp.org/)
+  + CUDA Toolkit (https://developer.nvidia.com/cuda-toolkit)
   + Entonrno de desarrollo integrado(IDE)
     - Eclipse
     - Clion
