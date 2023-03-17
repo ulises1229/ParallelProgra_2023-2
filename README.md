@@ -12,8 +12,6 @@ ___
 
 
 
-![alt text](figs/logo.png)
-
 
 ## Profesor
  Dr. Ulises Olivares Pinto
