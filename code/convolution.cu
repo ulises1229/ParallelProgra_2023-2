@@ -195,4 +195,3 @@ void parallelConvolution1D(){
 
 
 
-
