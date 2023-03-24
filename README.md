@@ -48,6 +48,10 @@ Se deberán crear cuentas en las siguientes plataformas:
 ### 4.1 OpenMP
 | No.        | Tema           | Conceptos |Código  |  Material complementario|
 | :-------------: |:-------------| :-------------|:-----:| :-----|
+| 1.              |Introducción a la programación con OpenMP          | Paralelización de ciclos, memoria compartida y privada |   <ul> <li>[vectorAdd](code/OMP/1.VectorAdd/main.cpp)</li> </ul>|  [OpenMP API Reference](https://www.openmp.org/wp-content/uploads/OpenMP-4.0-C.pdf)
+
+___
+
 ### 4.2 CUDA
 
 | No.        | Tema           | Conceptos |Código  |  Material complementario|
