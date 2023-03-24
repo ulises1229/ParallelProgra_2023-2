@@ -4,8 +4,8 @@ ___
 ## Programación Paralela
 ### Semestre 2023-2
 
-<img src="figs/lictec_small.png" alt="drawing" width="300" style = "text-align: center"/>
 
+<img src="figs/LogoParallel.png" alt="drawing" style = "text-align: center"/>
 
 
 ___
