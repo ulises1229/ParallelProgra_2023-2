@@ -1,7 +1,15 @@
-# Posgrado en Ciencia e Ingeniería de la Computación 
-## Introducción a la Programación Paralela con GPUs
-###  Semestre: 2021-1
-![alt text](figs/logo.png)
+___
+
+# Licenciatura en Tecnología
+## Programación Paralela
+### Semestre 2023-2
+
+
+<img src="figs/LogoParallel.png" alt="drawing" style = "text-align: center"/>
+
+
+___
+
 
 
 
@@ -9,9 +17,7 @@
  Dr. Ulises Olivares Pinto
 
 ## Objetivo del curso
-Presentar al estudiante el modelo de programación paralela empleando Unidades de
-Procesamiento Gráfico (GPUs). Se utilizarán los GPUs como dispositivo de propósito
-general para la resolución de problemas inherentemente paralelos.
+Presentar al estudiante el modelo de programación paralela para CPUs y GPUs para la resolución de problemas inherentemente paralelos.
 
 
 ## Prerequisitos
@@ -26,7 +32,8 @@ Se deberá contar con una computadora con GPU de la marca NVIDIA
 #### Software
 Se deberá contar con el siguiente software instalado 
 
-  + [CUDA Toolkit] (https://developer.nvidia.com/cuda-toolkit)
+  + OpenMP (https://www.openmp.org/)
+  + CUDA Toolkit (https://developer.nvidia.com/cuda-toolkit)
   + Entonrno de desarrollo integrado(IDE)
     - Eclipse
     - Clion
@@ -40,11 +47,13 @@ Se deberán crear cuentas en las siguientes plataformas:
 ## Contenido del curso
 | No.        | Tema           | Conceptos |Código  |  Material complementario|
 | :-------------: |:-------------| :-------------|:-----:| :-----|
-| 1.              |Introducción a la programación con GPUs          | Introducción a CUDA, modelo de programación paralelo, consulta de dispositivo |   --     |  Artículos<ol><li>[link](https://arxiv.org/abs/1202.4347)</li><li>[link](https://dl.acm.org/doi/abs/10.1145/1365490.1365500)</li><li>[link](https://www.sciencedirect.com/science/article/abs/pii/S0743731508000932)</li></ol>        | 
-| 2.              |Modelo de ejecución paralela           |   Hilos, bloques, warps, memoria de dispositivo          | <ul> <li>[vectorAdd.cu](code/vectorAdd)</li> </ul>    | [Capítulos 1 - 3](https://www.iaa.csic.es/~dani/ebooks/MK.Programming.Massively.Parallel.Processors.2nd.Edition.Dec.2012.pdf)| 
-| 3.              |Jerarquía de memoria  |  Memoria global, memoria compartida, registros, caches, sincronización de hilos y latencias   |    |  [Capítulo 4](https://www.iaa.csic.es/~dani/ebooks/MK.Programming.Massively.Parallel.Processors.2nd.Edition.Dec.2012.pdf)        |   
-| 4.              |Patrones de acceso de memoria: (Convolución)      |   Memoria constante, memoria global, memoria compartida, convoluciones        | <ul> <li>[convolution_global.cu](code/convolution.cu)</li> <li>[convolution_tiled.cu](code/convolution_tiled.cu)</li></ul>       | [Capítulos 5 - 7](https://www.iaa.csic.es/~dani/ebooks/MK.Programming.Massively.Parallel.Processors.2nd.Edition.Dec.2012.pdf)         |    
-| 5.              |Patronesd de acceso: Merge Sort     |   Memoria compartida, buffer, algoritmo de ordenamiento     |   <ul><li>[merge.cu](code/merge.cu)</li></ul>     |      [Capítulo 11](https://www.iaa.csic.es/~dani/ebooks/MK.Programming.Massively.Parallel.Processors.2nd.Edition.Dec.2012.pdf)     |    
-| 6.              |Memoria unificada     | Inicialización en host y device, prefetching          |  <ul><li>[unifiedMem.cu](code/unifiedMem.cu)</li></ul>        |          |    
+| 1.              |Introducción a la programación con GPUs          | Introducción a CUDA, modelo de programación paralelo, consulta de dispositivo |   <ul><li>[Hello World](code/1.hello.cu)</li> <li>[vectorAdd](code/2.vectorAdd.cu)</li> <li>[CUDA Samples](https://github.com/NVIDIA/cuda-samples)</li></ul>    |  Capítulo 1 - (D.Kirk et al., 2017)
+| 2.              |Organización de bloque e Hilos     | Bloques,  hilos, indexación y rendimiento |   <ul><li>[vectorAdd](code/2.vectorAdd.cu)</li></ul>    |  Capítulos 2 y 3 - (D.Kirk et al., 2017)
+| 3.              |Organización de hilos y jerarquía de memoria  | Localidad de datos, memoria compartida, local y global |   <ul><li>[Importar Imágenes](code/importImage)</li></ul>    |  Capítulo 6 - (D.Kirk et al., 2017)
+| 4.              |Multiplicación de matrices  | Memoria global |   <ul><li>[Matrix mult. Global](code/3.matrixMultGlobal.cu)</li></ul>    |  Capítulos 4 y 5 - (D.Kirk et al., 2017)
+| 5.              |Multiplicación de matrices  | Memoria compartida, tiling |   <ul><li>[Matrix mult Shared](code/4.matrixMultShared.cu)</li></ul>    |  Capítulo 6 - (D.Kirk et al., 2017)
+| 6.              |Patrón de acceso paralelo: Convolución  | Memoria compartida, tiling, memoria constante|   <ul><li>[Convolution](code/convolution.cu) </li><li>[Convolution Tiled](code/convolution_tiled.cu) </li></ul>    |  Capítulo 7 - (D.Kirk et al., 2017)
+| 7.              |Patrón de acceso paralelo: Suma prefijo  | Memoria compartida, tiling |   <ul><li> </li></ul>    |  Capítulo 8 - (D.Kirk et al., 2017)
+| 8.              |Patrón de acceso paralelo: Histogramas  | Operaciones atómicas |   <ul><li>[Histogram](code/histogram.cu)</li></ul>    |  Capítulo 9 - (D.Kirk et al., 2017)
 
-##### Última actualización: 10 de diciembre de 2020
+##### Última actualización: 24 de marzo de 2023
